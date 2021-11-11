@@ -26,8 +26,7 @@ public class Goalkeeper extends Player{
 
     // power --> 10 des Spielers
     // reaction --> 8
-
-                            // 8, 9, 10
+    // 8, 9, 10
     public boolean ballHold(int powerAtGoalKick) {
         Random rnd=new Random();
         int zufallszahl= rnd.nextInt(4)-2;  // -2  -1   0   1

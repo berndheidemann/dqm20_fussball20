@@ -1,20 +1,21 @@
 package de.szut;
 
-public class Coach {
-    private String name;
-    private int age;
+public class Coach extends Person {
+
     private int experience;
 
     public Coach(String name, int age, int experience) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.experience = experience;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "\nCoach\n"
                 + "name: " + this.name
                 + "\nage: " + this.age
                 + "\nexperience: " + this.experience;
     }
+
+
 }

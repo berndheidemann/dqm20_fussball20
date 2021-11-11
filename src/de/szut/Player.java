@@ -2,19 +2,24 @@ package de.szut;
 
 import java.util.Random;
 
-public class Player {
+public class Player extends Person {
 
-    protected String name;
-    protected int age;
     protected int strength;
     protected int powerAtGoalKick;
     protected int motivation;
     protected int numberOfGoals;
     protected int force;
 
+    public int getForce() {
+        return force;
+    }
+
+    public int getMotivation() {
+        return motivation;
+    }
+
     public Player(String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals, int force) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.strength = strength;
         this.powerAtGoalKick = powerAtGoalKick;
         this.motivation = motivation;
