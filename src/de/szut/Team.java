@@ -49,6 +49,10 @@ public class Team {
         return sum / (count + 1);
     }
 
+    public Coach getCoach() {
+        return coach;
+    }
+
     @Override
     public String toString() {
         String result = "***Mannschaft***\n";

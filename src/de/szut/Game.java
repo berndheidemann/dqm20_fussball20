@@ -7,6 +7,14 @@ public class Game {
     private int goalsHome;
     private int goalsAway;
 
+    public Team getHomeTeam() {
+        return homeTeam;
+    }
+
+    public Team getAwayTeam() {
+        return awayTeam;
+    }
+
     public Game(Team homeTeam, Team awayTeam) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;

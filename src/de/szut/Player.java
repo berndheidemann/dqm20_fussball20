@@ -9,6 +9,10 @@ public class Player extends Person {
     protected int numberOfGoals;
     protected int force;
 
+    public int getNumberOfGoals() {
+        return numberOfGoals;
+    }
+
     public int getForce() {
         return force;
     }
@@ -25,12 +29,16 @@ public class Player extends Person {
         this.force = force;
     }
 
+    public int getPowerAtGoalKick() {
+        return powerAtGoalKick;
+    }
+
     public int shootAtGoal() {
         // -2, -1, 0, 1
         Random rnd = new Random();
-        int zufallszahl=rnd.nextInt(4); // 0, 1, 2 oder 3
-        zufallszahl=zufallszahl-2; // -2, -1, 0, oder 1
-        return validate(powerAtGoalKick+zufallszahl);
+        int zufallszahl = rnd.nextInt(4); // 0, 1, 2 oder 3
+        zufallszahl = zufallszahl - 2; // -2, -1, 0, oder 1
+        return validate(powerAtGoalKick + zufallszahl);
     }
 
     public void addGoal() {
