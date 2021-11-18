@@ -2,11 +2,11 @@ package de.szut;
 
 import java.util.Random;
 
-public class Goalkeeper extends Player{
+public class Goalkeeper extends Player {
     private int reaction;
 
-    public Goalkeeper(String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals, int force, int reaction) {
-        super(name, age, strength, 0, motivation, numberOfGoals, force);
+    public Goalkeeper(String name, int age, int powerAtGoalKick, int motivation, int numberOfGoals, int force, int reaction) {
+        super(name, age, 0, motivation, numberOfGoals, force);
         this.reaction = reaction;
     }
 
@@ -17,7 +17,6 @@ public class Goalkeeper extends Player{
                 + "\nname: " + this.name
                 + "\nage: " + this.age
                 + "\npowerAtGoalKick: " + this.powerAtGoalKick
-                + "\nstrength: " + this.strength
                 + "\nforce" + this.force
                 + "\nnumberOfGoals: " + this.numberOfGoals
                 + "\nmotivation: " + this.motivation;

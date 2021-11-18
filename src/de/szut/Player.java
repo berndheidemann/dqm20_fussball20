@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Player extends Person {
 
-    protected int strength;
     protected int powerAtGoalKick;
     protected int motivation;
     protected int numberOfGoals;
@@ -18,9 +17,8 @@ public class Player extends Person {
         return motivation;
     }
 
-    public Player(String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals, int force) {
+    public Player(String name, int age, int powerAtGoalKick, int motivation, int numberOfGoals, int force) {
         super(name, age);
-        this.strength = strength;
         this.powerAtGoalKick = powerAtGoalKick;
         this.motivation = motivation;
         this.numberOfGoals = numberOfGoals;
@@ -57,7 +55,6 @@ public class Player extends Person {
                 + "name: " + this.name
                 + "\nage: " + this.age
                 + "\npowerAtGoalKick: " + this.powerAtGoalKick
-                + "\nstrength: " + this.strength
                 + "\nforce" + this.force
                 + "\nnumberOfGoals: " + this.numberOfGoals
                 + "\nmotivation: " + this.motivation;

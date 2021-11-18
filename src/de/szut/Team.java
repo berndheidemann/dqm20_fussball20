@@ -6,6 +6,11 @@ public class Team {
     private String name;
     private Goalkeeper goalkeeper;
     private Coach coach;
+
+    public String getName() {
+        return name;
+    }
+
     private ArrayList<Player> squad;
 
     public Team(String name, Goalkeeper goalkeeper, Coach coach) {
@@ -42,6 +47,18 @@ public class Team {
             count++;
         }
         return sum / (count + 1);
+    }
+
+    @Override
+    public String toString() {
+        String result = "***Mannschaft***\n";
+        result += "Trainer:" + this.coach.name + "\n";
+        result += "Torwart:" + this.goalkeeper.getName() + "\n";
+
+        for (Player player : this.squad) {
+            result += "Spieler:" + player.getName() + "\n";
+        }
+        return result;
     }
 
 }
